@@ -27,14 +27,14 @@ backend-platform
 └── tsconfig.base.json # TypeScript config
 ```
 
-Runtime: Node.js v20 (LTS)
-Framework: Fastify (High performance framework)
-Language: TypeScript (Strict typing)
-Package Manager: pnpm Workspaces
-Monorepo Tool: Turborepo
-Virtualization: Docker (Multi-stage build)
+- Runtime: Node.js v20 (LTS)
+- Framework: Fastify (High performance framework)
+- Language: TypeScript (Strict typing)
+- Package Manager: pnpm Workspaces
+- Monorepo Tool: Turborepo
+- Virtualization: Docker (Multi-stage build)
 
-```
+
 
 Requirement
 
