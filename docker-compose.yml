@@ -1,0 +1,23 @@
+services:
+
+  auth-service:
+    container_name: auth-service
+    build:
+      context: .
+      dockerfile: docker/auth.Dockerfile
+    env_file:
+      - .env.auth
+    ports:
+      - "4000:4000"
+
+  gateway:
+    container_name: gateway
+    build:
+      context: .
+      dockerfile: docker/gateway.Dockerfile
+    env_file:
+      - .env.gateway
+    ports:
+      - "3000:3000"
+    depends_on:
+      - auth-service

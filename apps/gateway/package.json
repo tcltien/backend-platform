@@ -1,0 +1,12 @@
+{
+    "name": "@apps/gateway",
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "build": "tsc",
+        "start": "node dist/server.js"
+    },
+    "dependencies": {
+        "fastify": "^4.26.0",
+        "@fastify/http-proxy": "^9.0.0"
+    }
+}
