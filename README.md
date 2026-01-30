@@ -10,21 +10,21 @@ The project uses a Microservices architecture combined with Turborepo to central
 backend-platform
 │
 ├── apps
-│ ├── gateway # API Gateway (Điểm tiếp nhận và điều phối request)
-│ ├── auth-service # Dịch vụ xác thực & ủy quyền (Authentication)
-│ ├── core-service # Xử lý logic nghiệp vụ chính (Domain logic)
-│ └── worker-service # Xử lý các tác vụ nền (Background jobs)
+│ ├── gateway # API Gateway
+│ ├── auth-service # Authentication
+│ ├── core-service # Domain logic
+│ └── worker-service # Background jobs
 │
 ├── packages
-│ ├── logger # Thư viện ghi log dùng chung
-│ ├── jwt # Tiện ích xử lý mã hóa và giải mã JWT
-│ └── config # Trình tải và quản lý biến môi trường (Env loader)
+│ ├── logger # Log
+│ ├── jwt #
+│ └── config # Env loader
 │
-├── docker # Chứa các Dockerfile riêng biệt cho từng dịch vụ
-├── docker-compose.yml # Cấu hình khởi chạy toàn bộ hệ thống
-├── turbo.json # Cấu hình pipeline xây dựng của Turborepo
-├── pnpm-workspace.yaml # Định nghĩa không gian làm việc của pnpm
-└── tsconfig.base.json # Cấu hình TypeScript gốc cho toàn bộ repo
+├── docker # Dockerfile
+├── docker-compose.yml # Docker config
+├── turbo.json # Turborepo config
+├── pnpm-workspace.yaml # pnpm config
+└── tsconfig.base.json # TypeScript config
 ```
 
 Runtime: Node.js v20 (LTS)
