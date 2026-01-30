@@ -1,11 +1,12 @@
 # Backend Platform
 
-Hệ thống Microservices hiện đại được xây dựng trên nền tảng **Monorepo**, tối ưu cho hiệu năng và khả năng mở rộng.
+The modern Microservices system is built on a Monorepo architecture, optimized for performance and scalability.
 
-## Kiến trúc hệ thống
+## Project structure
 
-Dự án sử dụng mô hình **Microservices** kết hợp với **Turborepo** để quản lý mã nguồn tập trung nhưng triển khai độc lập.
+The project uses a Microservices architecture combined with Turborepo to centrally manage the codebase while enabling independent deployments.
 
+```text
 backend-platform
 │
 ├── apps
@@ -24,6 +25,7 @@ backend-platform
 ├── turbo.json # Cấu hình pipeline xây dựng của Turborepo
 ├── pnpm-workspace.yaml # Định nghĩa không gian làm việc của pnpm
 └── tsconfig.base.json # Cấu hình TypeScript gốc cho toàn bộ repo
+```
 
 Runtime: Node.js v20 (LTS)
 Framework: Fastify (High performance framework)
